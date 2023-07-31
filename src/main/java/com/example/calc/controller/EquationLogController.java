@@ -26,7 +26,7 @@ public class EquationLogController {
         return equationlog;
     }
 
-    @GetMapping("/getequatationlogById/{id}")
+    @GetMapping("/getequatationlogbyid/{id}")
     public List<EquationLog> getEquatationLog(@PathVariable int id){
         List<EquationLog> personalinformation = repository.findById(id);
         return personalinformation;
